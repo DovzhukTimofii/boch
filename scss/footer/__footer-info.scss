@@ -1,0 +1,53 @@
+.footer-info {
+    background: $gray-backround-color;
+    width: 100%;
+    height: 510px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 91px;
+    .footer-info__item {
+        min-height: 402px;
+        width: 292px;
+        padding-top: 44px;
+        padding-left: 28px;
+        .footer-info__h2 {
+            @include h2;
+            min-height: 60px;
+        }
+        .footer-info__p {
+            @include p;
+            min-height: 60px;
+        }
+        .footer-info__blue-link {
+            display: flex;
+            justify-content: space-between;
+            width: 125px;
+            .footer-info__a {
+                @include blue-link
+            }
+            .footer-info__blue-strict {
+                margin-top: 2px;
+            }
+        }
+        .footer-info__tel {
+            display: flex;
+            justify-content: space-between;
+            width: 144px;
+            .footer-info__a {
+                @include blue-link;
+            }
+        }
+        .footer-info__gmail {
+            display: flex;
+            justify-content: space-between;
+            width: 198px;
+            .footer-info__a {
+                @include blue-link;
+            }
+        }
+        .footer-info__blue-link--width {
+            width: 239px;
+        }
+        
+    }
+}

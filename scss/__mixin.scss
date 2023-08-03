@@ -1,0 +1,88 @@
+@mixin button {
+    font-family: "Bosch Sans Regular",sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: .055em;
+            padding: 15px 17px 15px 17px;
+            border: none;
+            background: $topic-backround-color;
+            color: #fff;
+            transition: .3s;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            &:hover {
+                box-shadow: 0px 3px 10px $topic-backround-color; 
+            }
+}
+
+@mixin p {
+    font-family: 'Bosch Sans Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-font-color;
+    letter-spacing: 0.055em;
+    margin-top: 22px;
+}
+
+@mixin h3 {
+    font-family: 'Bosch Sans Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.6087px;
+    line-height: 21px;
+    color: $main-font-color;
+}
+
+@mixin blue-link {
+    font-family: 'Bosch Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color:  $topic-backround-color;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+        margin-left: 5px;
+    }
+}
+
+@mixin blue-fat-link {
+    font-family: 'Bosch Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.035em;
+    color:  $topic-backround-color;
+    text-decoration: none;
+}
+
+@mixin h2 {
+    font-family: 'Bosch Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.9%;
+    letter-spacing: 0.06em;
+    color: $main-font-color;
+}
+
+@mixin min-link{
+    font-family: 'Bosch Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $main-font-color;
+    &:hover {
+        text-decoration: revert;
+    }
+}

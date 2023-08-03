@@ -1,0 +1,72 @@
+.main-helper-card {
+    padding-top: 83px;
+    .main-helper-card__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 73px;
+        grid-column-gap: 32px;
+        .main-helper-card__item {
+            width: 292px;
+            height: 482px;
+            position: relative;
+            .main-helper-card__header {
+                @include h3;
+                min-height: 37px;
+            }
+            .main-helper-card__text {
+                @include p;
+                min-height: 120px
+            }
+            .main-helper-card__button  {
+                @include button;
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+            }
+            .main-helper-card__button--margin-top {
+                margin-top: -5px;
+            }
+            .main-helper-card__foto1 {
+                background: url(../../img/main-helper-card/main-helper-card1.png) center center/cover no-repeat;
+                width: 95%;
+                height: 163px;
+            }
+            .main-helper-card__foto2 {
+                background: url(../../img/main-helper-card/main-helper-card2.png) center center/cover no-repeat;
+                width: 95%;
+                height: 163px;
+            }
+            .main-helper-card__foto3 {
+                background: url(../../img/main-helper-card/main-helper-card3.png) center center/cover no-repeat;
+                width: 95%;
+                height: 163px;
+            }
+            .main-helper-card__foto4 {
+                background: url(../../img/main-helper-card/main-helper-card4.png) center center/cover no-repeat;
+                width: 95%;
+                height: 163px;
+            }
+            .main-helper-card__foto5 {
+                background: url(../../img/main-helper-card/main-helper-card5.png) center center/cover no-repeat;
+                width: 95%;
+                height: 163px;
+            }
+            .main-helper-card__foto6 {
+                background: url(../../img/main-helper-card/main-helper-card6.png) center center/cover no-repeat;
+                width: 95%;
+                height: 163px;
+            }
+            .main-helper-card__foto7 {
+                background: url(../../img/main-helper-card/main-helper-card7.png) center center/cover no-repeat;
+                width: 95%;
+                height: 163px;
+            }
+            .main-helper-card__foto8 {
+                background: url(../../img/main-helper-card/main-helper-card8.png) center center/cover no-repeat;
+                width: 95%;
+                height: 163px;
+            }
+        }
+    }
+}

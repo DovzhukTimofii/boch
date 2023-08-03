@@ -1,0 +1,53 @@
+.helper-card {
+    margin-top: 95px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .helper-card__item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 394px;
+            position: relative;
+            height: 482px;
+
+            .helper-card__foto__first {
+                background: url(../img/helper-cards/helper-card1.png) center center/cover no-repeat;
+                width: 95%;
+                height: 223px;
+            }
+
+            .helper-card__foto__second {
+                background: url(../img/helper-cards/helper-card2.png) center center/cover no-repeat;
+                width: 95%;
+                height: 223px;
+            }
+
+            .helper-card__foto__third {
+                background: url(../img/helper-cards/helper-card3.png) center center/cover no-repeat;
+                width: 95%;
+                height: 223px;
+            }
+
+            .helper-card__header {
+                @include h3;
+                min-height: 42px
+            }
+
+            .helper-card__text {
+                @include p;
+                min-height: 100px;
+            }
+
+            .helper-card__button {
+                @include button;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+    }
+}

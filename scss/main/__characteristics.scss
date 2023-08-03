@@ -1,0 +1,74 @@
+.characteristics {
+    width: 100%;
+    height: 973px;
+    background: $gray-backround-color;
+    margin-top: 92px;
+    padding-top: 60px;
+    .container {
+        .characteristics__slider {
+            position: relative;
+            .slick-arrow {
+                position: absolute;
+                top: 107%;
+                z-index: 10;
+                font-size: 0;
+                width: 8px;
+                height: 30px;
+                border: none;
+                cursor: pointer;
+            }
+            .slick-prev {
+                left: 88%;
+                background: url(../icon/miniLeftStrict.svg) 0 0 / 100% no-repeat;
+            }
+            .slick-next {
+                right: 0%;
+                background: url(../icon/miniRightStrict.svg) 0 0 / 100% no-repeat;
+            }
+            .slick-track {
+                display: flex;
+            }
+            .slick-list {
+                overflow: hidden;
+            }
+            .characteristics__slider__item {
+                .characteristics-card {
+                    width: 291px;
+                    height: 817px;
+                    background: $white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .characteristics-card__ul {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width: 71%;;
+                        list-style-image: url('../icon/blueStrict.svg');
+                        .characteristics-card__li {
+                            padding-top: 28px;
+                            .characteristics-card__fat-link {
+                                @include blue-fat-link
+                            }
+                            .characteristics-card__link {
+                                @include blue-link
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .characteristics__number {
+            font-family: 'Bosch Sans Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #8A9097;
+            position: absolute;
+            left: 50%;
+            margin-top: 32px;
+        }
+    }
+}
